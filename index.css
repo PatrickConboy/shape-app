@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato%7CParisienne');
+
+h1 {
+  font-family: Parisienne;
+  font-size: 7vw;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 4px red,
+               1px 1px 7px black;
+}
