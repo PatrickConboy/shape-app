@@ -1,3 +1,2 @@
-// import Sidebar from './Sidebar'
-
-canvasObject = document.getElementById("canvas").setAttribute("fill", "#723");
+// This module will provide functionality to alter our canvas object
+canvasObject = document.getElementById("canvas").setAttribute("fill", "black");
