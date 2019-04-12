@@ -10,6 +10,16 @@ h1 {
                1px 1px 7px black;
 }
 
+#wrapper {
+  display: flex;
+  border: 1px solid black;
+}
+
+#sidebar {
+  width: 20%;
+  border: 2px solid black;
+}
+
 #canvasForm {
 
 }
