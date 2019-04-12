@@ -7,25 +7,33 @@
     <title>Shape App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+
+    <!-- This line fixes an issue where console says, "404, can't find favicon.ico" -->
+    <link rel="shortcut icon" href="#" /> 
   </head>
 
   <body>
     <main>
       <h1>Shape App</h1>
 
-      <svg id="svg1" width="1000" height="500">
-        <rect id="canvas" x="0" y="0" width="400" height="180" fill="gray"/>
+      <form id="canvasForm">
+        <div>
+          <input type="number" name="widthInput" placeholder="Enter Width"><br>
+          <input type="number" name="heightInput" placeholder="Enter Height"><br>
+          <button type="submit">Change Canvas Size</button>
+        </div>
+      </form>
+      
+      <svg id="svg" width="80%" height="80%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect id="canvas" width="100" height="100" style="fill:gray"/>
       </svg>
     </main>
-
-    <button onclick="canvas.style.fill='yellow';">Click to change to yellow</button>
-
-    <!-- canvas.js will provide the ability to alter our canvas element -->
+    
+    <!-- Pulls in canvas.js file to help change canvas size -->
     <script src="canvas.js"></script>
 
     <!-- shape.js will provide the ability to create and manipulate different shapes
          to put on the canvas -->
-    <script src="shapes.js"></script>
-
+    <script type="module" src="shapes.js"></script>
   </body>
 </html>
