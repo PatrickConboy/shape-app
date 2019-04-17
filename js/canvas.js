@@ -1,27 +1,13 @@
-// This script provides functionality to change the canvas dimensions
-
-// Grab our form object and add an event listener to it
-// const form = document.querySelector('form#canvasForm')
-// form.addEventListener('submit', (ev) => {
-//   ev.preventDefault()
-//   handleSubmit(ev)
-// })
-
-// export function changeCanvasSize(width, height) {
-//   const canvas = document.getElementById('canvas')
-//   canvas.setAttribute('width', width)
-//   canvas.setAttribute('height', height)
-// }
-
-// function handleSubmit(ev) {
-//   const c = ev.target
-//   changeCanvasSize(c.widthInput.value, c.heightInput.value)
-// }
-
+// This module provides the Canvas class which creates our canvas.
 
 export default class Canvas {
   constructor (width, height) {
     this.createCanvas(width, height)
+    this.width = width
+    this.height = height
+    this.x = 0
+    this.y = 0
+    this.fill = 'grey'
   }
 
   createCanvas (width, height) {

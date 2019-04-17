@@ -1,10 +1,9 @@
-import canvas from '/js/canvas.js';
-import shapes from '/js/shapes.js';
+import canvas from '/js/canvas.js'
+import shapes from '/js/shapes.js'
 
 class Main {
   constructor () {
     this.createCanvas()
-    
   }
   
   createCanvas() {

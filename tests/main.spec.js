@@ -1,4 +1,4 @@
-let expect = chai.expect;
+let expect = chai.expect
 
-import Canvas from '/js/canvas.js';
+import Canvas from '/js/canvas.js'
 
