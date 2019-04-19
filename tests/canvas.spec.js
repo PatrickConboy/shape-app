@@ -1,6 +1,6 @@
 let expect = chai.expect
 
-import canvas from '../js/canvas.js'
+import canvas from '../src/canvas.js.js'
 
 describe('Testing Canvas creation', () => {
   let testCanvas = new canvas(800, 500)

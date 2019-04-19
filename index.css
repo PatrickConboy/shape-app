@@ -5,21 +5,13 @@ h1 {
   font-size: 2vw;
   margin: 0;
   color: white;
-  text-align: center;
+  padding-left: 325px;
   text-shadow: 1px 1px 4px red,
                1px 1px 7px black;
 }
 
-#wrapper {
-  display: flex;
+#shapesMenu {
+  width: 800px;
+  height: 100px;
   border: 1px solid black;
-}
-
-#sidebar {
-  width: 20%;
-  border: 2px solid black;
-}
-
-#canvasForm {
-
 }

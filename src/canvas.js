@@ -11,12 +11,12 @@ export default class Canvas {
   }
 
   createCanvas (width, height) {
-    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg")
-    var svgNS = svg.namespaceURI
+    let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg")
+    let svgNS = svg.namespaceURI
     svg.setAttribute('width', '800px')
     svg.setAttribute('height', '500px')
 
-    var canvas = document.createElementNS(svgNS,'rect')
+    let canvas = document.createElementNS(svgNS,'rect')
     canvas.setAttribute('x', 0)
     canvas.setAttribute('y', 0)
     canvas.setAttribute('width', width)
