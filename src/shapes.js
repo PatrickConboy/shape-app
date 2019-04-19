@@ -17,6 +17,22 @@ export default class Shapes {
   addButtons() {
     var circleButton = document.createElement("BUTTON")
     circleButton.innerHTML = "Add Circle"
+    circleButton.id = 'circleButton'
     document.getElementById('shapesMenu').appendChild(circleButton)
+
+    // var lineButton = document.createElement("BUTTON")
+    // lineButton.innerHTML = "Add Line"
+    // lineButton.id = 'lineButton'
+    // document.getElementById('shapesMenu').appendChild(lineButton)
+
+    // var rectangleButton = document.createElement("BUTTON")
+    // rectangleButton.innerHTML = "Add Rectangle"
+    // rectangleButton.id = 'rectangleButton'
+    // document.getElementById('shapesMenu').appendChild(rectangleButton)
+
+    // var textButton = document.createElement("BUTTON")
+    // textButton.innerHTML = "Add Text"
+    // textButton.id = 'textButton'
+    // document.getElementById('shapesMenu').appendChild(textButton)
   }
 }
