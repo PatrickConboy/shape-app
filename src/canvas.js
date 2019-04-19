@@ -11,14 +11,15 @@ export default class Canvas {
   }
 
   createCanvas (width, height) {
+    // Setting up SVG stuff
     let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg")
     let svgNS = svg.namespaceURI
     svg.setAttribute('width', '800px')
     svg.setAttribute('height', '500px')
+    svg.id = 'canvas'
 
+    // Create the actual canvas rectangle and add it to our DOM
     let canvas = document.createElementNS(svgNS,'rect')
-    canvas.setAttribute('x', 0)
-    canvas.setAttribute('y', 0)
     canvas.setAttribute('width', width)
     canvas.setAttribute('height', height)
     canvas.setAttribute('fill', 'grey')
