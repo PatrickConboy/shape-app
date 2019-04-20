@@ -13,7 +13,6 @@ export default class Shapes {
     new shapesMenu()
   }
 
-  // add button for each shape type
   addButtons() {
     // Setting up SVG stuff
     // Pulls SVG element from our canvas
@@ -34,15 +33,18 @@ export default class Shapes {
     circleButton.id = 'circleButton'
     document.getElementById('shapesMenu').appendChild(circleButton)
 
-    // This block of code handles creation of a 
-    // new circle when the New Circle button is clicked
+    // When Add Circle is clicked, this block of code asks the user for input on
+    // desired circle settings and then creates the circle
     document.getElementById('circleButton').addEventListener('click', function() {
-      let width = prompt('Circle Width')
-      let height = prompt('Circle Height')
+      let cx = prompt('Circle X Placement')
+      let cy = prompt('Circle Y Placement')
+      let radius = prompt('Circle Radius')
+      let color = prompt('Circle Color')
       let circle = document.createElementNS(svgNS,'circle')
-      circle.setAttribute('width', width)
-      circle.setAttribute('height', height)
-      circle.setAttribute('fill', 'red')
+      circle.setAttribute('cx', cx)
+      circle.setAttribute('cy', cy)
+      circle.setAttribute('r', radius)
+      circle.setAttribute('fill', color)
       svg.insertBefore(circle, svg.childNodes[0])
     })
   }
@@ -77,10 +79,15 @@ export default class Shapes {
     document.getElementById('rectangleButton').addEventListener('click', function() {
       let width = prompt('Rectangle Width')
       let height = prompt('Rectangle Height')
-      let rectangle = document.createElementNS(svgNS,'rectangle')
+      let x = prompt('Rectangle X Position')
+      let y = prompt('Rectangle Y Position')
+      let color = prompt('Rectangle Color')
+      let rectangle = document.createElementNS(svgNS,'rect')
       rectangle.setAttribute('width', width)
       rectangle.setAttribute('height', height)
-      rectangle.setAttribute('fill', 'black')
+      rectangle.setAttribute('x', x)
+      rectangle.setAttribute('y', y)
+      rectangle.setAttribute('fill', color)
       svg.insertBefore(rectangle, svg.childNodes[0])
     })
   }
