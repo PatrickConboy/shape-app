@@ -106,13 +106,16 @@ export default class Shapes {
     // This block of code handles creation of a 
     // new text when the New Text button is clicked
     document.getElementById('textButton').addEventListener('click', function() {
-      let width = prompt('Text Width')
-      let height = prompt('Text Height')
+      let x = prompt('Text X Position')
+      let y = prompt('Text Y Position')
+      let color = prompt('Text Color')
+      let textValue = prompt('Enter Your Text')
       let text = document.createElementNS(svgNS,'text')
-      text.setAttribute('width', width)
-      text.setAttribute('height', height)
-      text.setAttribute('fill', 'black')
-      svg.insertBefore(text, svg.childNodes[0])
+      text.setAttribute('x', x)
+      text.setAttribute('y', y)
+      text.setAttribute('fill', color)
+      text.innerHTML = textValue
+      svg.appendChild(text)
     })
   }
 }
