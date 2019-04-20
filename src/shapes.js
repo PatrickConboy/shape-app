@@ -45,7 +45,8 @@ export default class Shapes {
       circle.setAttribute('cy', cy)
       circle.setAttribute('r', radius)
       circle.setAttribute('fill', color)
-      svg.insertBefore(circle, svg.childNodes[0])
+      // svg.insertBefore(circle, svg.childNodes[0])
+      svg.appendChild(circle)
     })
   }
 
