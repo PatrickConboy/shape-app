@@ -27,4 +27,4 @@ Assistance given by Dr. Haris Skiadas
 # License
 This application uses the MIT license. 
 
-For more information see: [LICENSE.txt](https://github.com/PatrickConboy/World-of-Warcraft-API/blob/master/LICENSE.txt)
+For more information see: [LICENSE.txt](https://github.com/PatrickConboy/shape-app/blob/master/LICENSE.txt)
