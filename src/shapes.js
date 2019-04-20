@@ -58,13 +58,18 @@ export default class Shapes {
     // This block of code handles creation of a 
     // new line when the New Line button is clicked
     document.getElementById('lineButton').addEventListener('click', function() {
-      let width = prompt('Line Width')
-      let height = prompt('Line Height')
+      let x1 = prompt('Line x1 Coordinate')
+      let y1 = prompt('Line y1 Coordinate')
+      let x2 = prompt('Line x2 Coordinate')
+      let y2 = prompt('Line y2 Coordinate')
+      let color = prompt('Line Color')
       let line = document.createElementNS(svgNS,'line')
-      line.setAttribute('width', width)
-      line.setAttribute('height', height)
-      line.setAttribute('fill', 'black')
-      svg.insertBefore(line, svg.childNodes[0])
+      line.setAttribute('x1', x1)
+      line.setAttribute('y1', y1)
+      line.setAttribute('x2', x2)
+      line.setAttribute('y2', y2)
+      line.setAttribute('stroke', color)
+      svg.appendChild(line)
     })
   }
 
